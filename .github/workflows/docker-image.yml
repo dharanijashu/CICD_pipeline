@@ -27,8 +27,8 @@ jobs:
 
       # Step 4: Run the tests using pytest
       - name: Run tests with pytest
-        run: |
-          pytest --maxfail=1 --disable-warnings -q
+        run: pytest test.py
+          
 
       # Step 5: Log in to Docker Hub
       - name: Log in to Docker Hub
